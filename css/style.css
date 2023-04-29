@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+
+body{
+    background-color: #f1f6fc31;
+    font-family: 'Inter', sans-serif;
+}
+
+section, footer {
+    padding: 54px 0;
+}
+
+h3{
+    font-size: 50px;
+}
+
+p{
+   color: #0000009c; 
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.btn{
+    background-color: #4f9cf9;
+    padding: 15px 20px;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+}
+
+.btn:hover{
+    background-color: #3580db;
+}
+
+@keyframes animate-outline {
+    from{
+        outline: 0px solid #4f9bf98a;
+    }
+    to{
+        outline: 15px solid #4f9bf900;
+    }
+}
+
+header{
+    background-position: center;
+    /*para imagem ocupar toda a altura e largura disponivel na tag*/
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav{
+    /*deixar os elementos um ao lado do outro*/
+    display: flex;
+    align-items: center;
+    /*espaço igual para todos os elementos*/
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav ul a{
+    color: #fff;
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    /*comportamento de elemento de bloco*/
+    display: block;
+}
+
+/**/
+nav ul a:not(.btn):after{
+    content: "";
+    background-color: #4f9cf9;
+    height: 3px;
+    /*tamanho da linha*/
+    width: 0%;
+    display: block;
+    /*para a animação começar pelo centro*/
+    margin: 0 auto;
+    transition: 0.3s;
+}
+nav ul a:hover::after{
+    width: 100%;
+}
+
+.banner{
+    display: flex;
+    /*alinha os elementos verticais*/
+    justify-content: center;
+}
+
+.banner .banner-text{
+    margin: 150px;
+    text-align: center;
+    padding: 0 90px;
+}
+
+.banner .banner-text h1{
+    font-size: 96px;
+    color: #fff;
+}
+
+.banner .banner-text p{
+    font-size: 20px;
+    color: #ffffffb7;
+    font-weight: lighter;
+    margin: 18px 0;
+}
+
