@@ -54,7 +54,8 @@ p{
     }
 }
 
-header{
+header,
+footer{
     background-position: center;
     /*para imagem ocupar toda a altura e largura disponivel na tag*/
     background-size: cover;
@@ -145,4 +146,92 @@ nav ul a:hover::after{
 }
 .faca-mais .faca-mais-img img{
     width: 100%;
+}
+
+/*Cards*/
+.depoimentos h3{
+    text-align: center;
+}
+.depoimentos p{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+}
+.depoimentos .card-item{
+    background-color: #d3e6fd;
+    margin: 15px;
+    border-radius: 14px;
+    text-align: center;
+    width: 350px;
+    transition: 0.3s;
+}
+.depoimentos .card-item img{
+    width: 80px;
+    border-radius: 100%;
+    display: block;
+    margin: 10px auto;
+}
+.depoimentos .card-item .nome-user{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+.depoimentos .card-item .depoimento-user{
+    font-size: 15px;
+    padding: 0 15px;
+    transition: 0.3s;
+}
+.depoimentos .card-item .estrelas{
+    margin: 15px 0;
+    border-top: 2px solid #71767a23;
+}
+.depoimentos .card-item .estrelas i{
+    color: #4f9cf9;
+    margin-top: 15px;
+    font-size: 20px;
+    transition: 0.3s;
+} 
+.depoimentos .card-item:hover{
+    background-color: #4f9cf9;
+    /*efeito de amplitude*/
+    margin-top: -5px;
+}
+.depoimentos .card-item:hover .nome-user,
+.depoimentos .card-item:hover .depoimento-user,
+.depoimentos .card-item:hover .estrelas i{
+    color: #fff;
+}
+
+/*Clientes*/
+.clientes h3,
+.clientes P{
+    text-align: center;
+}
+.clientes .container div{
+    display: flex;
+    align-items: center;
+    /*espaço entre os itens e nas bordas*/
+    justify-content: space-around;
+}
+
+/*footer*/
+.footer{
+    background: #4f9cf9;
+    text-align: center;
+}
+.footer i{
+    color: #4f9cf9;
+    font-size: 19px;
+    background-color: #fff;
+    margin: 3px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.footer p{
+    margin-top: 10px;
+    color: #fff;
 }
